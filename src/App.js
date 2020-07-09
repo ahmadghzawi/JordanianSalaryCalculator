@@ -226,20 +226,20 @@ export default class App extends Component {
 
     return (
       <>
-        <div className="container mt-3">
-          <div className="row">
+        <div className="container">
+          <div className="row m-0">
             <div className="col-12 ">
               <hr />
               <h4 className="text-center">Jordanian Salary Calculator</h4>
               <hr />
             </div>
           </div>
-          <div className="row">
+          <div className="row m-0">
             <div className="col-1"></div>
-            <div className="col-10 mt-1">
+            <div className="col-10">
               <div className="row m-0">
                 <div className="col-12">
-                  <div className="row m-0 d-flex justify-content-between flex-nowrap">
+                  <div className="row m-0 d-flex justify-content-around flex-nowrap">
                     <div className="form-group">
                       <label className="border-bottom">
                         Income Tax Exemption
@@ -373,7 +373,7 @@ export default class App extends Component {
               <div className="row m-0 d-flex justify-content-around flex-column flex-md-row">
                 <div className="text-center m-0">
                   <button
-                    className="btn mt-3"
+                    className="btn mt-2"
                     disabled={amount ? false : true}
                     onClick={() => onSubmit("included")}
                   >
@@ -383,7 +383,7 @@ export default class App extends Component {
 
                 <div className="text-center m-0">
                   <button
-                    className="btn mt-3"
+                    className="btn mt-2"
                     disabled={amount ? false : true}
                     onClick={() => onSubmit("excluded")}
                   >
@@ -392,7 +392,7 @@ export default class App extends Component {
                 </div>
               </div>
               <div
-                className="row d-flex justify-content-center mt-2"
+                className="row d-flex justify-content-center mt-1"
                 style={{ visibility: calculating ? "visible" : "hidden" }}
               >
                 <div className="spinner-border" role="status">
@@ -401,7 +401,7 @@ export default class App extends Component {
               </div>
             </div>
           </div>
-          <div className="row">
+          <div className="row m-0">
             <div className="col-1"></div>
             <div className="col-10">
               <hr />
@@ -411,12 +411,12 @@ export default class App extends Component {
                     <label className="border-bottom">Salaries</label>
                   </div>
                   <pre className="m-1">
-                    <b>Basic Annual Salary: </b>
+                    <b>Gross Annual Salary: </b>
                     {new Intl.NumberFormat("ja-JP").format(
                       roundToThreeDecimals(annualSalary)
                     )}
                   </pre>
-                  <pre className="m-1 mb-3">
+                  <pre className="m-1 mb-2">
                     <b>Net Annual Salary: </b>
                     {new Intl.NumberFormat("ja-JP").format(
                       roundToThreeDecimals(netAnnualSalary)
@@ -424,7 +424,7 @@ export default class App extends Component {
                   </pre>
 
                   <pre className="m-1">
-                    <b>Basic Monthly Salary: </b>
+                    <b>Gross Monthly Salary: </b>
                     {new Intl.NumberFormat("ja-JP").format(
                       roundToThreeDecimals(monthlySalary)
                     )}
