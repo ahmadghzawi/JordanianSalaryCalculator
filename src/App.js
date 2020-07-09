@@ -24,15 +24,7 @@ export default class App extends Component {
 
     socialSecurity: { none: true, 0.075: false, 0.1425: false, 0.2175: false },
 
-    taxCategoryAmounts: [
-      0,
-      250,
-      750,
-      1500,
-      2500,
-      3750,
-      { person: 245250, family: 243000 },
-    ],
+    taxCategoryAmounts: [0, 250, 750, 1500, 2500, 3750, 247500],
   };
 
   calculateWithTaxIncluded = (annualSalary, selectedSS) => {
@@ -59,17 +51,14 @@ export default class App extends Component {
       (annualSalary > 9000 && exemption.person) ||
       (annualSalary > 18000 && exemption.family)
     ) {
-
-      if (annualSalary > 1000000) {
-        amountOverMillion = annualSalary - 1000000;
-        totalTax +=
-          (exemption.person
-            ? taxCategoryAmounts[6].person
-            : taxCategoryAmounts[6].family) +
-          amountOverMillion * 0.3;
-
+      if (
+        (annualSalary > 1009000 && exemption.person) ||
+        (annualSalary > 1018000 && exemption.family)
+      ) {
+        amountOverMillion =
+          annualSalary - (exemption.person ? 1009000 : 1018000);
+        totalTax += taxCategoryAmounts[6] + amountOverMillion * 0.3;
       } else {
-
         amountSubjectToTax = exemption.person
           ? annualSalary - 9000
           : annualSalary - 18000;
@@ -90,11 +79,10 @@ export default class App extends Component {
       monthlyTax = totalTax / 12;
       netAnnualSalary = annualSalary - totalTax;
       netMonthlySalary = netAnnualSalary / 12;
-      
     }
 
     if (selectedSS !== "none") {
-      totalSS = (annualSalary > 36000 ? 36000 : annualSalary) * +selectedSS;
+      totalSS = (annualSalary > 39936 ? 39936 : annualSalary) * +selectedSS;
       monthlySS = totalSS / 12;
       netAnnualSalary -= totalSS;
       monthlySalary = annualSalary / 12;
@@ -251,7 +239,7 @@ export default class App extends Component {
             <div className="col-10 mt-1">
               <div className="row m-0">
                 <div className="col-12">
-                  <div className="row m-0 d-flex justify-content-around ">
+                  <div className="row m-0 d-flex justify-content-around flex-nowrap">
                     <div className="form-group">
                       <label className="border-bottom">
                         Income Tax Exemption
@@ -267,8 +255,11 @@ export default class App extends Component {
                           onChange={() => toggleExemption("person")}
                         />
                         <label className="form-check-label" htmlFor="family">
-                          Person <small className="text-muted">(9,000)</small>
+                          Person
                         </label>
+                        <p className="m-0">
+                          <small className="text-muted">(9,000 JOD)</small>
+                        </p>
                       </div>
                       <div className="form-check">
                         <input
@@ -281,12 +272,15 @@ export default class App extends Component {
                           onChange={() => toggleExemption("family")}
                         />
                         <label className="form-check-label" htmlFor="family">
-                          Family <small className="text-muted">(18,000)</small>
+                          Family
                         </label>
+                        <p className="m-0">
+                          <small className="text-muted">(18,000 JOD)</small>
+                        </p>
                       </div>
                     </div>
 
-                    <div className="form-group ">
+                    <div className="form-group">
                       <label className="border-bottom">
                         Social Security Deduction
                       </label>
@@ -376,24 +370,24 @@ export default class App extends Component {
                 </div>
               </div>
 
-              <div className="row m-0">
-                <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center m-0">
+              <div className="row m-0 d-flex justify-content-around flex-column flex-md-row">
+                <div className="text-center m-0">
                   <button
                     className="btn mt-3"
                     disabled={amount ? false : true}
                     onClick={() => onSubmit("included")}
                   >
-                    Calculate with Deductions Included
+                    Calculate, Deductions Included
                   </button>
                 </div>
 
-                <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center m-0">
+                <div className="text-center m-0">
                   <button
                     className="btn mt-3"
                     disabled={amount ? false : true}
                     onClick={() => onSubmit("excluded")}
                   >
-                    Calculate with Deductions Excluded
+                    Calculate, Deductions Excluded
                   </button>
                 </div>
               </div>
@@ -413,7 +407,9 @@ export default class App extends Component {
               <hr />
               <div className="row d-flex justify-content-around flex-column flex-lg-row">
                 <div className="mt-2">
-                  <p className="text-center border-bottom">Salaries</p>
+                  <div className=" text-center">
+                    <label className="border-bottom">Salaries</label>
+                  </div>
                   <pre className="m-1">
                     <b>Basic Annual Salary: </b>
                     {new Intl.NumberFormat("ja-JP").format(
@@ -442,7 +438,9 @@ export default class App extends Component {
                 </div>
 
                 <div className="mt-2">
-                  <p className="text-center border-bottom">Deductions</p>
+                  <div className=" text-center">
+                    <label className="border-bottom">Deductions</label>
+                  </div>
                   <pre className="m-1">
                     <b>Total Income Tax: </b>
                     {new Intl.NumberFormat("ja-JP").format(
