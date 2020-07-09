@@ -239,7 +239,7 @@ export default class App extends Component {
             <div className="col-10 mt-1">
               <div className="row m-0">
                 <div className="col-12">
-                  <div className="row m-0 d-flex justify-content-around flex-nowrap">
+                  <div className="row m-0 d-flex justify-content-between flex-nowrap">
                     <div className="form-group">
                       <label className="border-bottom">
                         Income Tax Exemption
