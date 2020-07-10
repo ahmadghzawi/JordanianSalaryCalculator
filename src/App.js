@@ -102,34 +102,26 @@ export default class App extends Component {
   };
 
   calculateWithTaxExcluded = async (netAnnualSalary, selectedSS) => {
-    const { exemption } = this.state;
-    if (
-      (netAnnualSalary <= 9000 && exemption.person) ||
-      (netAnnualSalary <= 18000 && exemption.family)
-    )
-      return this.calculateWithTaxIncluded(+netAnnualSalary, selectedSS);
-    else {
-      let salary = netAnnualSalary * 1.5;
-      let factor = 1000;
-      let minFactor = 0.00001;
-      let difference = 0;
+    let salary = netAnnualSalary * 1.5;
+    let factor = 1000;
+    let minFactor = 0.00001;
+    let difference = 0;
 
-      while (true) {
-        difference =
-          this.calculateWithTaxIncluded(salary, selectedSS).netAnnualSalary -
-          netAnnualSalary;
+    while (true) {
+      difference =
+        this.calculateWithTaxIncluded(salary, selectedSS).netAnnualSalary -
+        netAnnualSalary;
 
-        if (difference < 0) {
-          salary += factor;
-          factor = factor / 10;
-          salary -= factor;
-        } else salary -= factor;
+      if (difference < 0) {
+        salary += factor;
+        factor = factor / 10;
+        salary -= factor;
+      } else salary -= factor;
 
-        if (difference < -minFactor && factor === minFactor) break;
-      }
-
-      return this.calculateWithTaxIncluded(salary + minFactor, selectedSS);
+      if (factor === minFactor) break;
     }
+
+    return this.calculateWithTaxIncluded(salary + minFactor, selectedSS);
   };
 
   roundToThreeDecimals = (num) => {
@@ -349,13 +341,13 @@ export default class App extends Component {
                 <div className="row">
                   <div className="col-12">
                     <div className="form-group mb-0">
-                      <label htmlFor="amount">Amount</label>
+                      <label htmlFor="amount">Annual Salary</label>
                       <input
                         id="amount"
                         type="number"
                         className="form-control"
                         name="amount"
-                        placeholder="Annual Salary in JOD"
+                        placeholder="Amount in JOD"
                         value={amount}
                         onChange={(event) => onChange(event.target)}
                       />
@@ -378,7 +370,7 @@ export default class App extends Component {
                       disabled={amount ? false : true}
                       onClick={() => onSubmit("included")}
                     >
-                      Calculate, Deductions Included
+                      Calculate for Gross Salary
                     </button>
                   </div>
 
@@ -388,7 +380,7 @@ export default class App extends Component {
                       disabled={amount ? false : true}
                       onClick={() => onSubmit("excluded")}
                     >
-                      Calculate, Deductions Excluded
+                      Calculate for Net Salary
                     </button>
                   </div>
                 </div>
