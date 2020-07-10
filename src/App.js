@@ -226,272 +226,269 @@ export default class App extends Component {
 
     return (
       <>
-        <div className="container">
-          <div className="row m-0">
-            <div className="col-12 ">
-              <hr />
-              <h4 className="text-center">Jordanian Salary Calculator</h4>
-              <hr />
+        <div className="main-content">
+          <div className="container">
+            <div className="row m-0">
+              <div className="col-12 ">
+                <hr />
+                <h4 className="text-center">Jordanian Salary Calculator</h4>
+                <hr />
+              </div>
             </div>
-          </div>
-          <div className="row m-0">
-            <div className="col-1"></div>
-            <div className="col-10">
-              <div className="row m-0">
-                <div className="col-12">
-                  <div className="row m-0 d-flex justify-content-around flex-nowrap">
-                    <div className="form-group">
-                      <label className="border-bottom">
-                        Income Tax Exemption
-                      </label>
-                      <div className="form-check">
-                        <input
-                          className="form-check-input"
-                          type="radio"
-                          name="exemption"
-                          id="person"
-                          value="person"
-                          checked={exemption.person}
-                          onChange={() => toggleExemption("person")}
-                        />
-                        <label className="form-check-label" htmlFor="family">
-                          Person
+            <div className="row m-0">
+              <div className="col-1"></div>
+              <div className="col-10">
+                <div className="row m-0">
+                  <div className="col-12">
+                    <div className="row m-0 d-flex justify-content-around flex-nowrap">
+                      <div className="form-group">
+                        <label className="border-bottom">
+                          Income Tax Exemption
                         </label>
-                        <p className="m-0">
-                          <small className="text-muted">(9,000 JOD)</small>
-                        </p>
+                        <div className="form-check">
+                          <input
+                            className="form-check-input"
+                            type="radio"
+                            name="exemption"
+                            id="person"
+                            value="person"
+                            checked={exemption.person}
+                            onChange={() => toggleExemption("person")}
+                          />
+                          <label className="form-check-label" htmlFor="family">
+                            Person
+                          </label>
+                          <p className="m-0">
+                            <small className="text-muted">(9,000 JOD)</small>
+                          </p>
+                        </div>
+                        <div className="form-check">
+                          <input
+                            className="form-check-input"
+                            type="radio"
+                            name="exemption"
+                            id="family"
+                            value="family"
+                            checked={exemption.family}
+                            onChange={() => toggleExemption("family")}
+                          />
+                          <label className="form-check-label" htmlFor="family">
+                            Family
+                          </label>
+                          <p className="m-0">
+                            <small className="text-muted">(18,000 JOD)</small>
+                          </p>
+                        </div>
                       </div>
-                      <div className="form-check">
-                        <input
-                          className="form-check-input"
-                          type="radio"
-                          name="exemption"
-                          id="family"
-                          value="family"
-                          checked={exemption.family}
-                          onChange={() => toggleExemption("family")}
-                        />
-                        <label className="form-check-label" htmlFor="family">
-                          Family
-                        </label>
-                        <p className="m-0">
-                          <small className="text-muted">(18,000 JOD)</small>
-                        </p>
-                      </div>
-                    </div>
 
-                    <div className="form-group">
-                      <label className="border-bottom">
-                        Social Security Deduction
-                      </label>
-                      <div className="form-check">
-                        <input
-                          className="form-check-input"
-                          type="radio"
-                          name="socialSecurity"
-                          id="none"
-                          value="none"
-                          checked={socialSecurity.none}
-                          onChange={() => selectSocialSecurity("none")}
-                        />
-                        <label className="form-check-label" htmlFor="family">
-                          None
+                      <div className="form-group">
+                        <label className="border-bottom">
+                          Social Security Deduction
                         </label>
-                      </div>
-                      <div className="form-check">
-                        <input
-                          className="form-check-input"
-                          type="radio"
-                          name="socialSecurity"
-                          id="0.075"
-                          value="0.075"
-                          checked={socialSecurity["0.075"]}
-                          onChange={() => selectSocialSecurity("0.075")}
-                        />
-                        <label className="form-check-label" htmlFor="family">
-                          7.5%
-                        </label>
-                      </div>
-                      <div className="form-check">
-                        <input
-                          className="form-check-input"
-                          type="radio"
-                          name="socialSecurity"
-                          id="0.1425"
-                          value="0.1425"
-                          checked={socialSecurity["0.1425"]}
-                          onChange={() => selectSocialSecurity("0.1425")}
-                        />
-                        <label className="form-check-label" htmlFor="family">
-                          14.25%
-                        </label>
-                      </div>
-                      <div className="form-check">
-                        <input
-                          className="form-check-input"
-                          type="radio"
-                          name="socialSecurity"
-                          id="0.2175"
-                          value="0.2175"
-                          checked={socialSecurity["0.2175"]}
-                          onChange={() => selectSocialSecurity("0.2175")}
-                        />
-                        <label className="form-check-label" htmlFor="family">
-                          21.75%
-                        </label>
+                        <div className="form-check">
+                          <input
+                            className="form-check-input"
+                            type="radio"
+                            name="socialSecurity"
+                            id="none"
+                            value="none"
+                            checked={socialSecurity.none}
+                            onChange={() => selectSocialSecurity("none")}
+                          />
+                          <label className="form-check-label" htmlFor="family">
+                            None
+                          </label>
+                        </div>
+                        <div className="form-check">
+                          <input
+                            className="form-check-input"
+                            type="radio"
+                            name="socialSecurity"
+                            id="0.075"
+                            value="0.075"
+                            checked={socialSecurity["0.075"]}
+                            onChange={() => selectSocialSecurity("0.075")}
+                          />
+                          <label className="form-check-label" htmlFor="family">
+                            7.5%
+                          </label>
+                        </div>
+                        <div className="form-check">
+                          <input
+                            className="form-check-input"
+                            type="radio"
+                            name="socialSecurity"
+                            id="0.1425"
+                            value="0.1425"
+                            checked={socialSecurity["0.1425"]}
+                            onChange={() => selectSocialSecurity("0.1425")}
+                          />
+                          <label className="form-check-label" htmlFor="family">
+                            14.25%
+                          </label>
+                        </div>
+                        <div className="form-check">
+                          <input
+                            className="form-check-input"
+                            type="radio"
+                            name="socialSecurity"
+                            id="0.2175"
+                            value="0.2175"
+                            checked={socialSecurity["0.2175"]}
+                            onChange={() => selectSocialSecurity("0.2175")}
+                          />
+                          <label className="form-check-label" htmlFor="family">
+                            21.75%
+                          </label>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <hr />
-              <div className="row">
-                <div className="col-12">
-                  <div className="form-group mb-0">
-                    <label htmlFor="amount">Amount</label>
-                    <input
-                      id="amount"
-                      type="number"
-                      className="form-control"
-                      name="amount"
-                      placeholder="Annual Salary in JOD"
-                      value={amount}
-                      onChange={(event) => onChange(event.target)}
-                    />
-                    <small
-                      className="text-danger"
-                      style={{ visibility: msg ? "visible" : "hidden" }}
+                <hr />
+                <div className="row">
+                  <div className="col-12">
+                    <div className="form-group mb-0">
+                      <label htmlFor="amount">Amount</label>
+                      <input
+                        id="amount"
+                        type="number"
+                        className="form-control"
+                        name="amount"
+                        placeholder="Annual Salary in JOD"
+                        value={amount}
+                        onChange={(event) => onChange(event.target)}
+                      />
+                      <small
+                        className="text-danger"
+                        style={{ visibility: msg ? "visible" : "hidden" }}
+                      >
+                        <ul>
+                          <li>{msg ? msg : "msg"}</li>
+                        </ul>
+                      </small>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="row m-0 d-flex justify-content-around flex-column flex-md-row">
+                  <div className="text-center m-0">
+                    <button
+                      className="btn mt-2"
+                      disabled={amount ? false : true}
+                      onClick={() => onSubmit("included")}
                     >
-                      <ul>
-                        <li>{msg ? msg : "msg"}</li>
-                      </ul>
-                    </small>
+                      Calculate, Deductions Included
+                    </button>
+                  </div>
+
+                  <div className="text-center m-0">
+                    <button
+                      className="btn mt-2"
+                      disabled={amount ? false : true}
+                      onClick={() => onSubmit("excluded")}
+                    >
+                      Calculate, Deductions Excluded
+                    </button>
                   </div>
                 </div>
-              </div>
-
-              <div className="row m-0 d-flex justify-content-around flex-column flex-md-row">
-                <div className="text-center m-0">
-                  <button
-                    className="btn mt-2"
-                    disabled={amount ? false : true}
-                    onClick={() => onSubmit("included")}
-                  >
-                    Calculate, Deductions Included
-                  </button>
-                </div>
-
-                <div className="text-center m-0">
-                  <button
-                    className="btn mt-2"
-                    disabled={amount ? false : true}
-                    onClick={() => onSubmit("excluded")}
-                  >
-                    Calculate, Deductions Excluded
-                  </button>
-                </div>
-              </div>
-              <div
-                className="row d-flex justify-content-center mt-1"
-                style={{ visibility: calculating ? "visible" : "hidden" }}
-              >
-                <div className="spinner-border" role="status">
-                  <span className="sr-only">Calculating...</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="row m-0">
-            <div className="col-1"></div>
-            <div className="col-10">
-              <hr />
-              <div className="row d-flex justify-content-around flex-column flex-lg-row">
-                <div className="mt-2">
-                  <div className=" text-center">
-                    <label className="border-bottom">Salaries</label>
-                  </div>
-                  <pre className="m-1">
-                    <b>Gross Annual Salary: </b>
-                    {new Intl.NumberFormat("ja-JP").format(
-                      roundToThreeDecimals(annualSalary)
-                    )}
-                  </pre>
-                  <pre className="m-1 mb-2">
-                    <b>Net Annual Salary: </b>
-                    {new Intl.NumberFormat("ja-JP").format(
-                      roundToThreeDecimals(netAnnualSalary)
-                    )}
-                  </pre>
-
-                  <pre className="m-1">
-                    <b>Gross Monthly Salary: </b>
-                    {new Intl.NumberFormat("ja-JP").format(
-                      roundToThreeDecimals(monthlySalary)
-                    )}
-                  </pre>
-                  <pre className="m-1">
-                    <b>Net Monthly Salary: </b>
-                    {new Intl.NumberFormat("ja-JP").format(
-                      roundToThreeDecimals(netMonthlySalary)
-                    )}
-                  </pre>
-                </div>
-
-                <div className="mt-2">
-                  <div className=" text-center">
-                    <label className="border-bottom">Deductions</label>
-                  </div>
-                  <pre className="m-1">
-                    <b>Total Income Tax: </b>
-                    {new Intl.NumberFormat("ja-JP").format(
-                      roundToThreeDecimals(totalTax)
-                    )}
-                  </pre>
-                  <pre className="m-1 mb-3">
-                    <b>Monthly Income Tax: </b>
-                    {new Intl.NumberFormat("ja-JP").format(
-                      roundToThreeDecimals(monthlyTax)
-                    )}
-                  </pre>
-                  <pre className="m-1">
-                    <b>Total Social Security: </b>
-                    {new Intl.NumberFormat("ja-JP").format(
-                      roundToThreeDecimals(totalSS)
-                    )}
-                  </pre>
-                  <pre className="m-1">
-                    <b>Monthly Social Security: </b>
-                    {new Intl.NumberFormat("ja-JP").format(
-                      roundToThreeDecimals(monthlySS)
-                    )}
-                  </pre>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr />
-          <div className="invisible" style={{ fontSize: "10px" }}>
-            margin
-          </div>
-        </div>
-        <div className="mt-5">
-          <footer className="page-footer font-small">
-            <div className="container">
-              <div className="py-3 float-right">
-                Developed by:
-                <a
-                  href="https://www.linkedin.com/in/ahmad-ghzawi-827082139/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white"
+                <div
+                  className="row d-flex justify-content-center mt-1"
+                  style={{ visibility: calculating ? "visible" : "hidden" }}
                 >
-                  {" "}
-                  Ahmad Al-Ghzawi
-                </a>
+                  <div className="spinner-border" role="status">
+                    <span className="sr-only">Calculating...</span>
+                  </div>
+                </div>
               </div>
             </div>
-          </footer>
+            <div className="row m-0">
+              <div className="col-1"></div>
+              <div className="col-10">
+                <hr />
+                <div className="row d-flex justify-content-around flex-column flex-lg-row">
+                  <div className="mt-2">
+                    <div className=" text-center">
+                      <label className="border-bottom">Salaries</label>
+                    </div>
+                    <pre className="m-1">
+                      <b>Gross Annual Salary: </b>
+                      {new Intl.NumberFormat("ja-JP").format(
+                        roundToThreeDecimals(annualSalary)
+                      )}
+                    </pre>
+                    <pre className="m-1 mb-2">
+                      <b>Net Annual Salary: </b>
+                      {new Intl.NumberFormat("ja-JP").format(
+                        roundToThreeDecimals(netAnnualSalary)
+                      )}
+                    </pre>
+
+                    <pre className="m-1">
+                      <b>Gross Monthly Salary: </b>
+                      {new Intl.NumberFormat("ja-JP").format(
+                        roundToThreeDecimals(monthlySalary)
+                      )}
+                    </pre>
+                    <pre className="m-1">
+                      <b>Net Monthly Salary: </b>
+                      {new Intl.NumberFormat("ja-JP").format(
+                        roundToThreeDecimals(netMonthlySalary)
+                      )}
+                    </pre>
+                  </div>
+
+                  <div className="mt-2">
+                    <div className=" text-center">
+                      <label className="border-bottom">Deductions</label>
+                    </div>
+                    <pre className="m-1">
+                      <b>Total Income Tax: </b>
+                      {new Intl.NumberFormat("ja-JP").format(
+                        roundToThreeDecimals(totalTax)
+                      )}
+                    </pre>
+                    <pre className="m-1 mb-3">
+                      <b>Monthly Income Tax: </b>
+                      {new Intl.NumberFormat("ja-JP").format(
+                        roundToThreeDecimals(monthlyTax)
+                      )}
+                    </pre>
+                    <pre className="m-1">
+                      <b>Total Social Security: </b>
+                      {new Intl.NumberFormat("ja-JP").format(
+                        roundToThreeDecimals(totalSS)
+                      )}
+                    </pre>
+                    <pre className="m-1">
+                      <b>Monthly Social Security: </b>
+                      {new Intl.NumberFormat("ja-JP").format(
+                        roundToThreeDecimals(monthlySS)
+                      )}
+                    </pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+          </div>
         </div>
+        <footer>
+          <div className="container">
+            <div className="py-3 text-right">
+              Developed by:
+              <a
+                href="https://www.linkedin.com/in/ahmad-ghzawi-827082139/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white"
+              >
+                {" "}
+                Ahmad Al-Ghzawi
+              </a>
+            </div>
+          </div>
+        </footer>
       </>
     );
   }

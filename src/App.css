@@ -1,13 +1,18 @@
+.main-content{
+  overflow: hidden;
+  display: block;
+  position: relative;
+  min-height: calc(100vh - 56px); 
+}
+
 .btn {
   background-color: #1a78c2;
   color: white;
 }
 
-.page-footer {
+footer {
   background-color: #1a78c2;
   color: #a3c9e7;
-  position: fixed;
-  bottom: 0px;
   width: 100%;
 }
 
