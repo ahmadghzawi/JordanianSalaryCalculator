@@ -466,7 +466,7 @@ export default class App extends Component {
             <div className="py-3 text-right">
               Developed by:
               <a
-                href="https://www.linkedin.com/in/ahmad-ghzawi-827082139/"
+                href="https://www.linkedin.com/in/ahmad-al-ghzawi/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white"
