@@ -228,12 +228,12 @@ export default class App extends Component {
               </div>
             </div>
             <div className="row m-0">
-              <div className="col-1"></div>
-              <div className="col-10">
+              <div className="col-md-1"></div>
+              <div className="col-12 col-md-10">
                 <div className="row m-0">
                   <div className="col-12">
-                    <div className="row m-0 d-flex justify-content-around flex-nowrap">
-                      <div className="form-group">
+                    <div className="row m-0 d-flex justify-content-between justify-content-md-around flex-nowrap">
+                      <div className="form-group mr-2">
                         <label className="border-bottom">
                           Income Tax Exemption
                         </label>
@@ -249,10 +249,9 @@ export default class App extends Component {
                           />
                           <label className="form-check-label" htmlFor="family">
                             Person
+                            <small className="text-muted"> (9,000)</small>
                           </label>
-                          <p className="m-0">
-                            <small className="text-muted">(9,000 JOD)</small>
-                          </p>
+                          <p className="m-0"></p>
                         </div>
                         <div className="form-check">
                           <input
@@ -266,10 +265,9 @@ export default class App extends Component {
                           />
                           <label className="form-check-label" htmlFor="family">
                             Family
+                            <small className="text-muted"> (18,000)</small>
                           </label>
-                          <p className="m-0">
-                            <small className="text-muted">(18,000 JOD)</small>
-                          </p>
+                          <p className="m-0"></p>
                         </div>
                       </div>
 
@@ -305,7 +303,7 @@ export default class App extends Component {
                             7.5%
                           </label>
                         </div>
-                        <div className="form-check">
+                        {/* <div className="form-check">
                           <input
                             className="form-check-input"
                             type="radio"
@@ -332,7 +330,7 @@ export default class App extends Component {
                           <label className="form-check-label" htmlFor="family">
                             21.75%
                           </label>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>
@@ -355,9 +353,7 @@ export default class App extends Component {
                         className="text-danger"
                         style={{ visibility: msg ? "visible" : "hidden" }}
                       >
-                        <ul>
-                          <li>{msg ? msg : "msg"}</li>
-                        </ul>
+                        {msg ? msg : "msg"}
                       </small>
                     </div>
                   </div>
