@@ -1,20 +1,14 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@font-face {
+  font-family: "celinePeachSans";
+  src: url(./fonts/celine_peach/Celine_Peach_Sans.ttf);
 }
 
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "celinePeachScript";
+  src: url(./fonts/celine_peach/Celine_Peach_Script.ttf);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "centuryGothic";
+  src: url(./fonts/Century_Gothic/Century_Gothic.ttf);
 }
