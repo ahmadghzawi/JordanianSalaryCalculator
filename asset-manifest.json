@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/JordanianSalaryCalculator/static/css/main.c8ca8f41.chunk.css",
-    "main.js": "/JordanianSalaryCalculator/static/js/main.444fb32e.chunk.js",
-    "main.js.map": "/JordanianSalaryCalculator/static/js/main.444fb32e.chunk.js.map",
+    "main.js": "/JordanianSalaryCalculator/static/js/main.c3f7c2b0.chunk.js",
+    "main.js.map": "/JordanianSalaryCalculator/static/js/main.c3f7c2b0.chunk.js.map",
     "runtime-main.js": "/JordanianSalaryCalculator/static/js/runtime-main.9ae21355.js",
     "runtime-main.js.map": "/JordanianSalaryCalculator/static/js/runtime-main.9ae21355.js.map",
     "static/css/2.7072edc9.chunk.css": "/JordanianSalaryCalculator/static/css/2.7072edc9.chunk.css",
     "static/js/2.caf13ac3.chunk.js": "/JordanianSalaryCalculator/static/js/2.caf13ac3.chunk.js",
     "static/js/2.caf13ac3.chunk.js.map": "/JordanianSalaryCalculator/static/js/2.caf13ac3.chunk.js.map",
     "index.html": "/JordanianSalaryCalculator/index.html",
-    "precache-manifest.d4dd325a8c0e501db82914d7f8fae7ab.js": "/JordanianSalaryCalculator/precache-manifest.d4dd325a8c0e501db82914d7f8fae7ab.js",
+    "precache-manifest.752bb2efb00a4a76de2630383fdf1e26.js": "/JordanianSalaryCalculator/precache-manifest.752bb2efb00a4a76de2630383fdf1e26.js",
     "service-worker.js": "/JordanianSalaryCalculator/service-worker.js",
     "static/css/2.7072edc9.chunk.css.map": "/JordanianSalaryCalculator/static/css/2.7072edc9.chunk.css.map",
     "static/css/main.c8ca8f41.chunk.css.map": "/JordanianSalaryCalculator/static/css/main.c8ca8f41.chunk.css.map",
@@ -23,6 +23,6 @@
     "static/css/2.7072edc9.chunk.css",
     "static/js/2.caf13ac3.chunk.js",
     "static/css/main.c8ca8f41.chunk.css",
-    "static/js/main.444fb32e.chunk.js"
+    "static/js/main.c3f7c2b0.chunk.js"
   ]
 }
