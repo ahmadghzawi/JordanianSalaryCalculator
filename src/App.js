@@ -239,7 +239,7 @@ export default class App extends Component {
 
     this.styles = Styles(window.innerHeight, window.innerWidth);
 
-    window.location.reload();
+    // window.location.reload();
   };
 
   initializeStyles = () => {

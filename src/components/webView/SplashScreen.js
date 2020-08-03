@@ -5,7 +5,7 @@ export default function SplashScreen(props) {
 
   setTimeout(function () {
     document.getElementById("splash").style.display = "none";
-  }, 4000);
+  }, 2500);
 
   return (
     <div id="splash">
