@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/JordanianSalaryCalculator/static/css/main.c8ca8f41.chunk.css",
-    "main.js": "/JordanianSalaryCalculator/static/js/main.c3f7c2b0.chunk.js",
-    "main.js.map": "/JordanianSalaryCalculator/static/js/main.c3f7c2b0.chunk.js.map",
+    "main.css": "/JordanianSalaryCalculator/static/css/main.7ea68946.chunk.css",
+    "main.js": "/JordanianSalaryCalculator/static/js/main.67f18f9a.chunk.js",
+    "main.js.map": "/JordanianSalaryCalculator/static/js/main.67f18f9a.chunk.js.map",
     "runtime-main.js": "/JordanianSalaryCalculator/static/js/runtime-main.9ae21355.js",
     "runtime-main.js.map": "/JordanianSalaryCalculator/static/js/runtime-main.9ae21355.js.map",
     "static/css/2.7072edc9.chunk.css": "/JordanianSalaryCalculator/static/css/2.7072edc9.chunk.css",
     "static/js/2.caf13ac3.chunk.js": "/JordanianSalaryCalculator/static/js/2.caf13ac3.chunk.js",
     "static/js/2.caf13ac3.chunk.js.map": "/JordanianSalaryCalculator/static/js/2.caf13ac3.chunk.js.map",
     "index.html": "/JordanianSalaryCalculator/index.html",
-    "precache-manifest.752bb2efb00a4a76de2630383fdf1e26.js": "/JordanianSalaryCalculator/precache-manifest.752bb2efb00a4a76de2630383fdf1e26.js",
+    "precache-manifest.79d7737cea52dc5338880de8f6f1991b.js": "/JordanianSalaryCalculator/precache-manifest.79d7737cea52dc5338880de8f6f1991b.js",
     "service-worker.js": "/JordanianSalaryCalculator/service-worker.js",
     "static/css/2.7072edc9.chunk.css.map": "/JordanianSalaryCalculator/static/css/2.7072edc9.chunk.css.map",
-    "static/css/main.c8ca8f41.chunk.css.map": "/JordanianSalaryCalculator/static/css/main.c8ca8f41.chunk.css.map",
+    "static/css/main.7ea68946.chunk.css.map": "/JordanianSalaryCalculator/static/css/main.7ea68946.chunk.css.map",
     "static/js/2.caf13ac3.chunk.js.LICENSE.txt": "/JordanianSalaryCalculator/static/js/2.caf13ac3.chunk.js.LICENSE.txt",
     "static/media/Celine_Peach_Sans.ttf": "/JordanianSalaryCalculator/static/media/Celine_Peach_Sans.f74aa42d.ttf",
     "static/media/Celine_Peach_Script.ttf": "/JordanianSalaryCalculator/static/media/Celine_Peach_Script.a437a94b.ttf",
@@ -22,7 +22,7 @@
     "static/js/runtime-main.9ae21355.js",
     "static/css/2.7072edc9.chunk.css",
     "static/js/2.caf13ac3.chunk.js",
-    "static/css/main.c8ca8f41.chunk.css",
-    "static/js/main.c3f7c2b0.chunk.js"
+    "static/css/main.7ea68946.chunk.css",
+    "static/js/main.67f18f9a.chunk.js"
   ]
 }
