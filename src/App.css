@@ -32,7 +32,6 @@ body {
   box-shadow: none;
 }
 
-
 #splash {
   position: absolute;
   z-index: 10;
@@ -50,11 +49,11 @@ body {
 }
 
 @keyframes splashOut {
-  from {
+  0% {
     opacity: 1;
   }
-  to {
+  100% {
     opacity: 0;
+    z-index: -1;
   }
 }
-
