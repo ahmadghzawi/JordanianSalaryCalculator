@@ -63,6 +63,7 @@ export default class App extends Component {
 
   componentDidMount() {
     this.setState({});
+    this.updateSize();
     console.log(
       "Developed By: Ahmad Al-Ghzawi\nE-mail: ahmd.ghzawi@gmail.com\nMobile No.: +962 799 6788 34"
     );
@@ -231,11 +232,14 @@ export default class App extends Component {
   };
 
   updateSize = () => {
-    if (window.innerHeight <= 535) {
+    if (window.innerHeight <= 535 && window.innerWidth > 1024) {
       this.setState({
         windowWidth: window.innerWidth,
         windowHeight: 535,
+        isMobile: false,
       });
+
+      this.styles = Styles(535, window.innerWidth);
     } else {
       this.setState({
         windowWidth: window.innerWidth,
