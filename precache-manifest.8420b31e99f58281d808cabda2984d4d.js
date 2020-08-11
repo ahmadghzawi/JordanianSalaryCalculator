@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d97f6fcbf662bd13872cd1ac33d0ddae",
+    "revision": "501e30a81c28843bbd036d6380588854",
     "url": "/JordanianSalaryCalculator/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/JordanianSalaryCalculator/static/css/2.7072edc9.chunk.css"
   },
   {
-    "revision": "9221fa76b8f79037edb0",
+    "revision": "310fb663868879e41815",
     "url": "/JordanianSalaryCalculator/static/css/main.5f793a2e.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/JordanianSalaryCalculator/static/js/2.caf13ac3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9221fa76b8f79037edb0",
-    "url": "/JordanianSalaryCalculator/static/js/main.619aad03.chunk.js"
+    "revision": "310fb663868879e41815",
+    "url": "/JordanianSalaryCalculator/static/js/main.e0681fe2.chunk.js"
   },
   {
     "revision": "564b935bd979ce757f61",
