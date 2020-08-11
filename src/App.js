@@ -231,15 +231,20 @@ export default class App extends Component {
   };
 
   updateSize = () => {
-    this.setState({
-      windowWidth: window.innerWidth,
-      windowHeight: window.innerHeight,
-      isMobile: window.innerWidth <= 1024,
-    });
+    if (window.innerHeight <= 535) {
+      this.setState({
+        windowWidth: window.innerWidth,
+        windowHeight: 535,
+      });
+    } else {
+      this.setState({
+        windowWidth: window.innerWidth,
+        windowHeight: window.innerHeight,
+        isMobile: window.innerWidth <= 1024,
+      });
 
-    this.styles = Styles(window.innerHeight, window.innerWidth);
-
-    // window.location.reload();
+      this.styles = Styles(window.innerHeight, window.innerWidth);
+    }
   };
 
   initializeStyles = () => {

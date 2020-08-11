@@ -4,6 +4,12 @@ html {
 
 body {
   font-family: "centuryGothic";
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .celine-peach-sans {
