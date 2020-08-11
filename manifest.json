@@ -1,6 +1,6 @@
 {
-  "short_name": "JSC",
-  "name": "Jordanian Salary Calculator",
+  "short_name": "JSDC",
+  "name": "Jordanian Salary + Deductions Calculator",
   "icons": [
     {
       "src": "favicon.png",

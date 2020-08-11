@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/JordanianSalaryCalculator/precache-manifest.79d7737cea52dc5338880de8f6f1991b.js"
+  "/JordanianSalaryCalculator/precache-manifest.a48c9cd076195a602c5fa9ceaed8dc3c.js"
 );
 
 self.addEventListener('message', (event) => {
