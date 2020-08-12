@@ -36,7 +36,7 @@ export default function Results(props) {
               <span
                 style={{
                   ...styles.text.white,
-                  ...styles.size.medium.basic,
+                  ...styles.size.medium.results,
                 }}
               >
                 {new Intl.NumberFormat("ja-JP").format(
@@ -50,7 +50,7 @@ export default function Results(props) {
               <span
                 style={{
                   ...styles.text.white,
-                  ...styles.size.medium.basic,
+                  ...styles.size.medium.results,
                 }}
               >
                 {new Intl.NumberFormat("ja-JP").format(
@@ -65,7 +65,7 @@ export default function Results(props) {
               <span
                 style={{
                   ...styles.text.white,
-                  ...styles.size.medium.basic,
+                  ...styles.size.medium.results,
                 }}
               >
                 {new Intl.NumberFormat("ja-JP").format(
@@ -79,7 +79,7 @@ export default function Results(props) {
               <span
                 style={{
                   ...styles.text.white,
-                  ...styles.size.medium.basic,
+                  ...styles.size.medium.results,
                 }}
               >
                 {new Intl.NumberFormat("ja-JP").format(
@@ -107,7 +107,7 @@ export default function Results(props) {
               <span
                 style={{
                   ...styles.text.white,
-                  ...styles.size.medium.basic,
+                  ...styles.size.medium.results,
                 }}
               >
                 {new Intl.NumberFormat("ja-JP").format(
@@ -121,7 +121,7 @@ export default function Results(props) {
               <span
                 style={{
                   ...styles.text.white,
-                  ...styles.size.medium.basic,
+                  ...styles.size.medium.results,
                 }}
               >
                 {new Intl.NumberFormat("ja-JP").format(
@@ -135,7 +135,7 @@ export default function Results(props) {
               <span
                 style={{
                   ...styles.text.white,
-                  ...styles.size.medium.basic,
+                  ...styles.size.medium.results,
                 }}
               >
                 {new Intl.NumberFormat("ja-JP").format(
@@ -149,7 +149,7 @@ export default function Results(props) {
               <span
                 style={{
                   ...styles.text.white,
-                  ...styles.size.medium.basic,
+                  ...styles.size.medium.results,
                 }}
               >
                 {new Intl.NumberFormat("ja-JP").format(

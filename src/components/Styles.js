@@ -146,6 +146,10 @@ export default function Styles(windowHeight, windowWidth) {
           fontSize: windowHeight * 0.03,
         },
 
+        results:{
+          fontSize: windowHeight * 0.025,
+        },
+
         salaryAmount: {
           fontSize: windowHeight * 0.027,
         },

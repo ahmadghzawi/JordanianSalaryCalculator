@@ -28,7 +28,7 @@ export default class App extends Component {
     windowWidth: window.innerWidth,
     windowHeight: window.innerHeight,
 
-    isMobile: window.innerWidth <= 1024,
+    isMobile: window.innerWidth <= 1220,
 
     disableInput: "",
 
@@ -232,7 +232,7 @@ export default class App extends Component {
   };
 
   updateSize = () => {
-    if (window.innerHeight <= 535 && window.innerWidth > 1024) {
+    if (window.innerHeight <= 535 && window.innerWidth > 1220) {
       this.setState({
         windowWidth: window.innerWidth,
         windowHeight: 535,
@@ -244,7 +244,7 @@ export default class App extends Component {
       this.setState({
         windowWidth: window.innerWidth,
         windowHeight: window.innerHeight,
-        isMobile: window.innerWidth <= 1024,
+        isMobile: window.innerWidth <= 1220,
       });
 
       this.styles = Styles(window.innerHeight, window.innerWidth);
